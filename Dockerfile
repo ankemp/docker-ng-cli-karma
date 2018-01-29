@@ -24,4 +24,6 @@ RUN apt-get update \
   && ln -s /usr/bin/xvfb-chromium /usr/bin/chromium-browser \
   && ln -s /usr/lib/x86_64-linux-gnu/libOSMesa.so.6 /opt/google/chrome/libosmesa.so
 
+RUN mkdir -p ./test-reports
+
 USER $USER_ID
